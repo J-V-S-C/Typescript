@@ -1,0 +1,63 @@
+import { createServer } from 'http';
+import { task } from './classes/task';
+import { task2 } from './classes/task2';
+import { task3 } from './classes/task3';
+import { task4 } from './classes/task4';
+import { task5 } from './classes/task5';
+import { task6 } from './classes/task6';
+import { task7 } from './classes/task7';
+import { task8 } from './classes/task8';
+import { task9 } from './classes/task9';
+import { task10 } from './classes/task10';
+import { task11 } from './classes/task11';
+import { task12 } from './classes/task12';
+import { task13 } from './classes/task13';
+import { task14 } from './classes/task14';
+import { task15 } from './classes/task15';
+import { task16 } from './classes/task16';
+import { task17 } from './classes/task17';
+import { task18 } from './classes/task18';
+import { task19 } from './classes/task19';
+
+const port = 3333;
+
+const tasks = [
+  task,
+  task2,
+  task3,
+  task4,
+  task5,
+  task6,
+  task7,
+  task8,
+  task9,
+  task10,
+  task11,
+  task12,
+  task13,
+  task14,
+  task15,
+  task16,
+  task17,
+  task18,
+  task19,
+];
+
+function showClass(func: Function, i: number) {
+  console.log(`\nTask ${i + 1}:`);
+  func();
+}
+const responses = () => {
+  console.log(
+    `\n\n\nHey friend, this is the list of responses from the classes:`
+  );
+  tasks.forEach((func, i) => {
+    showClass(func, i);
+  });
+};
+
+const server = createServer((req, res) => {});
+
+server.listen(port, () => {
+  return console.log(responses());
+});
