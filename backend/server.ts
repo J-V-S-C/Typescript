@@ -18,6 +18,12 @@ import { task16 } from './classes/task16';
 import { task17 } from './classes/task17';
 import { task18 } from './classes/task18';
 import { task19 } from './classes/task19';
+import { task20 } from './classes/task20';
+import { task21 } from './classes/task21';
+import { task22 } from './classes/task22';
+import { task23 } from './classes/task23';
+import { task24 } from './classes/task24';
+import { task25 } from './classes/task25';
 
 const port = 3333;
 
@@ -41,6 +47,12 @@ const tasks = [
   task17,
   task18,
   task19,
+  task20,
+  task21,
+  task22,
+  task23,
+  task24,
+  task25,
 ];
 
 function showClass(func: Function, i: number) {

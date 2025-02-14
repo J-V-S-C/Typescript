@@ -1,8 +1,8 @@
 export const task19 = () => {
   class Company {
-    public readonly name: string; //public é obsoleto aqui
+    public readonly name: string; // public is obsolete
     private readonly colaborators: Colaborator[] = [];
-    protected readonly cnpj: string;
+    private readonly cnpj: string;
 
     constructor(name: string, cnpj: string) {
       this.name = name;
@@ -27,13 +27,13 @@ export const task19 = () => {
     ) {}
   }
 
-  const company1 = new Company('Udemy', '11.111.111/0001-11');
-  const colaborator1 = new Colaborator('Luiz', 'Otávio');
-  const colaborator2 = new Colaborator('Pelé', 'Souza');
-  const colaborator3 = new Colaborator('Rodrigo', 'Faro');
+  const company1 = new Company('Company1', '123456789');
+  const colaborator1 = new Colaborator('Colaborator1', 'LastName1');
+  const colaborator2 = new Colaborator('Colaborator2', 'LastName2');
+  const colaborator3 = new Colaborator('Colaborator3', 'LastName3');
   company1.addColaborator(colaborator1);
   company1.addColaborator(colaborator2);
   company1.addColaborator(colaborator3);
-  console.log(company1);
   company1.showColaborators();
+  console.log(company1);
 };
