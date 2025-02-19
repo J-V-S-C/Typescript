@@ -21,6 +21,7 @@ export const task47 = () => {
     };
   }
 
+  //It applies a decorator for Animal class
   @invertNameAndColor
   class Animal {
     constructor(public name: string, public color: string) {

@@ -46,6 +46,9 @@ import { task44 } from './classes/task44';
 import { task45 } from './classes/task45';
 import { task46 } from './classes/task46';
 import { task47 } from './classes/task47';
+import { task48 } from './classes/task48';
+import { task49 } from './classes/task49';
+import { task50 } from './classes/task50';
 
 const port = 3333;
 
@@ -97,6 +100,9 @@ const tasks = [
   task45,
   task46,
   task47,
+  task48,
+  task49,
+  task50,
 ];
 
 function showClass(func: Function, i: number) {
